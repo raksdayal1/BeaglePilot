@@ -88,16 +88,16 @@ void* __sensor_thread(void* arg)
     else{
       sensor_data.imu_count += 1;
       sensor_data.accel[0] = 	mpu_data.accel[0];
-      sensor_data.accel[1] = 	mpu_data.accel[0];
-      sensor_data.accel[2] = 	mpu_data.accel[0];
+      sensor_data.accel[1] = 	mpu_data.accel[1];
+      sensor_data.accel[2] = 	mpu_data.accel[2];
 
       sensor_data.gyro[0] = 	mpu_data.gyro[0]*DEG_TO_RAD;
-      sensor_data.gyro[1] = 	mpu_data.gyro[0]*DEG_TO_RAD;
-      sensor_data.gyro[2] = 	mpu_data.gyro[0]*DEG_TO_RAD;
+      sensor_data.gyro[1] = 	mpu_data.gyro[1]*DEG_TO_RAD;
+      sensor_data.gyro[2] = 	mpu_data.gyro[2]*DEG_TO_RAD;
 
       sensor_data.mag[0] = 	mpu_data.mag[0];
-      sensor_data.mag[1] = 	mpu_data.mag[0];
-      sensor_data.mag[2] = 	mpu_data.mag[0];
+      sensor_data.mag[1] = 	mpu_data.mag[1];
+      sensor_data.mag[2] = 	mpu_data.mag[2];
 
       sensor_data.temp = mpu_data.temp;
     }
