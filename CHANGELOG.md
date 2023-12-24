@@ -9,3 +9,6 @@ v0.2
 2. added loop_rate_hz defines to rc.cpp
 3. added pid class
 4. Created Control thread and added call to main thread
+
+v0.3
+1. Fixed bug updating sensor data from IMU. The sensor data was not updating the right index
